@@ -1,41 +1,11 @@
 mixin header(headerMods, currentUrl)
-  -
-    const headerLinks = [
-      {
-        href: "#",
-        text: "Бизнес",
-        isActive: true,
-      },
-      {
-        href: "#",
-        text: "О нас"
-      },
-      {
-        href: "#",
-        text: "Цены"
-      },
-      {
-        href: "#",
-        text: "Оформить заказ"
-      }
-    ]
-
-  header.header(class=headerMods data-header)
+  .header
     .container
       .header__wrapper
-        if(currentUrl === "index.html")
-          span.header__logo
-            +icon("logo", 247, 35)
-        else
-          a.header__logo(href="index.html", aria-label="Переход на главную")
-            +icon("logo", 247, 35)
-        nav.main-nav
-          button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.main-nav__toggle
-            span
-            span
-            span
-          ul.main-nav__list
-            each item in headerLinks
-              li.main-nav__item
-                a.main-nav__link(class={"is-active": item.isActive} href=item.href)!=item.text
+        +btn({href: "#popup", text: "Open pop-up button"}).popup__button
+  .popup(id="popup")
+    a.popup__overlay(href="#")
+    .popup__wrapper
+      a.btn-reset.popup__close-button(href="#" aria-label="Close pop-up") X
+      p.popup__text Pop-up
 

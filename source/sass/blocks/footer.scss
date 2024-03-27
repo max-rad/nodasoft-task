@@ -1,3 +1,7 @@
 .footer {
-
+  &__wrapper {
+    background-color: $color-jordy-blue;
+    min-height: 100px;
+    padding: 30px;
+  }
 }

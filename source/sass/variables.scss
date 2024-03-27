@@ -10,6 +10,14 @@ $color-transparent:             rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
+$color-jordy-blue:              #7faff6;
+$color-zumthor:                 #c0dbd9;
+$color-pale-cornflower-blue:    #a5c7f9;
+$color-conifer:                 #b3f95a;
+$color-de-york:                 #8ad191;
+$color-glacier:                 #88b5bf;
+$color-bondi-blue:              #0d89b0;
+
 $color-black-russian:           #10101d;
 $color-black-russian-2:         #2a2b30;
 $color-jaguar:                  #272733;
@@ -29,7 +37,7 @@ $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0)
 // переменная используемая в html для подключения скейлинга
 $fz-default: 20px;
 
-$ff-lato: "Lato", "Arial", sans-serif;
+$ff-roboto: "Roboto", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
